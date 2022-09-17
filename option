@@ -1,0 +1,62 @@
+  #include string
+  
+  //hope your day is going well! :) i'm implying that int main is already included and these are just the work for the assignments
+  
+  //option 2.1: reverse string function
+  void reverseString(string userString) {
+    cin >> userString;
+    for (i = 0; i <= userString.size(); i++) {
+      userString.at(i) = userString.at(userString.size() - i));
+    }
+  }
+  
+   ______________________________________________________________________________________________
+  
+  //option 2.2: output largest integer function
+  int findMaxVal (int maxVal) {
+    cin >> firstInPut;
+    cin >> secondInput;
+    cin >> thirdInput;
+    
+    if (thirdInput > secondInput && thirdInput > firstInput) {
+      maxVal = thirdInput; 
+    }
+    else if (secondInput > firstInput && secondInput > thirdInput) {
+      maxVal = secondInput; 
+    }
+    else if (firstInput > secondInput && firstInput > thirdInput) {
+      maxVal = firstInput; 
+    }
+    return maxVal;
+  }
+  
+   ______________________________________________________________________________________________
+  
+  //option 2.3: calculating a factorial:
+  int factorialFunction (int factorialVal) {
+    cout << "How many integers would you like to use?" << endl;
+    cin >> userEntries;
+    for (int i = 1; i <= userEntries.size(); ++i) {
+            factorialVal *= i;
+    }
+    return factorialVal;
+  }
+  
+ ______________________________________________________________________________________________
+  
+  //option 2.4: finding the nth value of a fibonacci sequence:
+  
+  int sequenceVal () {
+    int sequenceLength;
+    int sequenceVal = 1;
+    cin >> sequenceLength;
+    int fibonacciSeq[sequenceLength];
+    
+    fibonacciSeq.at(0) = 1;
+    fibonacciSeq.at(1) = 1;
+    for (i = 0; i < sequenceLength; i++) {
+      sequenceVal = fibonacciSeq.at(i-1) + fibonacciSeq.at(i-2);
+      fibonacciSeq.pushback_back(sequenceVal);
+    }
+    return sequenceVal;
+  }
